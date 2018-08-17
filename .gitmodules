@@ -1,0 +1,3 @@
+[submodule "tools/emsdk"]
+	path = tools/emsdk
+	url = https://github.com/juj/emsdk.git

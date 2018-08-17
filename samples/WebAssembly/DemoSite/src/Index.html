@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>LayoutSample</title>
+</head>
+<body>
+    <script type="text/xaml" pageLayout="full">
+        <UserControl>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                <Rectangle Fill="#FF000000" />
+                <TextBlock Text="XamlEngine" Foreground="#FFFFFFFF" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <TextBlock Text="This page has been rendered natively from Xaml in your browser using WebAssembly & WebGL." Grid.Row="1" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Stretch" TextAlignment="Center" TextWrapping="Wrap" />
+                <Rectangle Fill="#FF000000" Grid.Row="2" />
+                <TextBlock Text="Copyright XamlEngine.com 2018" Foreground="#FFFFFFFF" Grid.Row="2" FontSize="18" VerticalAlignment="Bottom" />
+            </Grid>
+        </UserControl>
+    </script>
+    <script type="text/javascript" src="script/XamlEngine.js"></script>
+</body>
+</html>
